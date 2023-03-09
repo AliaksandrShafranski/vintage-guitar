@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+  <link rel="icon" href="img/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__wrapper">
+    <div class="header__container _container">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg" alt="Logo">
+        </a>
+        <div class="navbar">
+          <div class="menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="index.html">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="electric.html">Electric</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="acoustic.html">Acoustic</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="about.html">About us</a>
+                </li>
+              </ul>
+              <ul class="menu__social">
+                <li class="menu__social-item">
+                  <a class="menu__social-link _icon-instagram" target="_blank" href="#">Instagram</a>
+                </li>
+                <li class="menu__social-item">
+                  <a class="menu__social-link _icon-twitter" target="_blank" href="#">Twitter</a>
+                </li>
+                <li class="menu__social-item">
+                  <a class="menu__social-link _icon-telegram" target="_blank" href="#">Telegram</a>
+                </li>
+                <li class="menu__social-item">
+                  <a class="menu__social-link _icon-pinterest" target="_blank" href="#">Pinterest</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="search">
+            <button class="search__icon _icon-search" type="button"></button>
+            <form class="search__form" action="#">
+              <input class="search__input" autocomplete="off" type="text" placeholder="Search">
+              <button class="search__btn _icon-search" type="submit" aria-label="Search"></button>
+            </form>
+          </div>
+          <div class="actions">
+            <a class="actions__item _icon-favourite" href="favourite.html"></a>
+            <a class="actions__item _icon-cart" href="cart.html">
+              <span>3</span>
+            </a>
+          </div>
+          <button class="menu__icon" type="button" aria-label="Open menu">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="page">
+
+      <section class="page__top top">
+        <div class="top__image">
+          <picture>
+            <source class="webp" srcset="img/top-bg.webp" type="image/webp">
+            <img class="top__bg" src="img/top-bg.jpg" alt="Image">
+          </picture>
+        </div>
+      </section>
+      <section class="page__breadcrumbs breadcrumbs">
+        <div class="breadcrumbs__container _container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item _icon-home">
+              <a class="breadcrumbs__link" href="index.html">Home</a>
+              <div class="_icon-double-arrow"></div>
+            </li>
+            <li class="breadcrumbs__item">
+              Catalog
+            </li>
+          </ul>  
+        </div>
+      </section>
+      <section class="page__catalog catalog">
+        <div class="catalog__container _container">
+          <div class="catalog__wrapper">
+            <aside class="catalog__filter filter-catalog">
+              <div class="filter-catalog__inner">
+                <div class="filter-catalog__categories">
+                  <h3 class="filter-catalog__title">Categories</h3>
+                  <ul class="filter-catalog__categories-list">
+                    <li class="filter-catalog__categories-item">
+                      <input class="filter-catalog__categories-input" type="checkbox" id="electric" value="filter-electric">
+                      <label class="filter-catalog__categories-label" for="electric">Electric</label>
+                    </li>
+                    <li class="filter-catalog__categories-item">
+                      <input class="filter-catalog__categories-input" type="checkbox" id="acoustic" value="filter-acoustic">
+                      <label class="filter-catalog__categories-label" for="acoustic">Acoustic</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-catalog__brands">
+                  <h3 class="filter-catalog__title">Brands</h3>
+                  <ul class="filter-catalog__brands-list">
+                    <li class="filter-catalog__brands-item">
+                      <input class="filter-catalog__brands-input" type="checkbox" id="epiphone" value="filter-epiphone">
+                      <label class="filter-catalog__brands-label" for="epiphone">Epiphone</label>
+                    </li>
+                    <li class="filter-catalog__brands-item">
+                      <input class="filter-catalog__brands-input" type="checkbox" id="fender" value="filter-fender">
+                      <label class="filter-catalog__brands-label" for="fender">Fender</label>
+                    </li>
+                    <li class="filter-catalog__brands-item">
+                      <input class="filter-catalog__brands-input" type="checkbox" id="gibson" value="filter-gibson">
+                      <label class="filter-catalog__brands-label" for="gibson">Gibson</label>
+                    </li>
+                    <li class="filter-catalog__brands-item">
+                      <input class="filter-catalog__brands-input" type="checkbox" id="martin" value="filter-martin">
+                      <label class="filter-catalog__brands-label" for="martin">Martin</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="filter-catalog__price price">
+                  <h3 class="filter-catalog__title">Price</h3>  
+                  <div class="price__value">
+                    <div class="price__field">
+                      <span>$</span>
+                      <input class="price__field-min" type="number" value="800">
+                    </div>
+                    <div class="price__separator">-</div>
+                    <div class="price__field">
+                      <span>$</span>
+                      <input class="price__field-max" type="number" value="18900">
+                    </div>
+                  </div>
+                  <div class="price__slider">
+                    <div class="price__progress"></div>
+                  </div>
+                  <div class="price__range">
+                    <input class="price__range-min" type="range" min="0" max="20000" value="800" step="100">
+                    <input class="price__range-max" type="range" min="0" max="20000" value="18900" step="100">
+                  </div>
+                </div>
+                <div class="filter-catalog__action">
+                  <button class="filter-catalog__clear" type="reset">Clear</button>
+                  <button class="filter-catalog__apply" type="submit">Apply</button>
+                </div>
+              </div>
+              <button class="filter-catalog__button _modal-open _icon-filter" data-modal-open="modal-1" type="button">Add filter</button>
+            </aside>
+            <main class="catalog__main main-catalog">
+              <div class="main-catalog__sort">
+                <div class="main-catalog__block">
+                  <button class="main-catalog__grid _icon-grid"></button>
+                  <button class="main-catalog__list _icon-list"></button>
+                </div>
+                <div class="main-catalog__block">
+                  <h4 class="main-catalog__title">Sort by:</h4>
+                  <form class="main-catalog__form" action="#">
+                    <select class="main-catalog__select" name="">
+                      <option class="main-catalog__option" selected="selected" value="new">Newest items</option>
+                      <option class="main-catalog__option" value="rating">Best rated</option>
+                      <option class="main-catalog__option" value="price-low">Price: low to high</option>
+                      <option class="main-catalog__option" value="price-high">Price: high to low</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+              <div class="main-catalog__items items-catalog">
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__image" href="product.html">
+                      <picture>
+                        <source class="webp" srcset="img/content/gibson/01/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/gibson/01/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        1973 Gibson Les Paul Custom, Black, Player-Grade
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;1973 Gibson Les Paul Custom &rsquo;Second&rsquo; in&nbsp;a &rsquo;Black&rsquo; finish with a&nbsp;black pickguard, gold hardware, replaced gold tuners, replaced black amplifier knobs, replaced gold tailpiece, replaced nut, &rsquo;2&prime; marked on&nbsp;rear headstock.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="product.html">
+                      <h4 class="items-catalog__title">
+                        1973 Gibson Les Paul Custom, Black, Player-Grade
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£5,295.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__image" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/gibson/02/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/gibson/02/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        2022 Gibson SG Standard '61 Cherry Red
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        The SG&nbsp;Standard &lsquo;61 returns to&nbsp;the classic design that made it&nbsp;relevant, played, and loved&nbsp;&mdash; shaping sound across generations and genres of&nbsp;music.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        2022 Gibson SG Standard '61 Cherry Red
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£1,999.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__image" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/gibson/03/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/gibson/03/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        Brand New Gibson Explorer, Antique Natural
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        Introduced along-side the Gibson Flying V&nbsp;in&nbsp;1958, the Gibson Explorer traveled where no&nbsp;man had gone before and past every guitar design that came before&nbsp;it. Over 60&nbsp;years later the Gibson Explorer is&nbsp;utilized by&nbsp;artists of&nbsp;all genres.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        Brand New Gibson Explorer, Antique Natural
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£1,999.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/gibson/04/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/gibson/04/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        Early 2000's Gibson Les Paul R8 Sunburst
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;an&nbsp;early 2000&rsquo;s Gibson Les Paul R8&nbsp;in&nbsp;a&nbsp;sunburst finish with chrome tuners, black buttons, chrome tailpiece, chrome bridge, gold knobs, minimal wear on&nbsp;frets, tune-o-matic bridge, rosewood fingerboard.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        Early 2000's Gibson Les Paul R8 Sunburst
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£3,995.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/gibson/05/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/gibson/05/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        Gibson “Wildwood” Spec 1959 Flying V - Antique Pelham Blue, Mahogany
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;stunning Gibson &laquo;Wildwood&raquo; spec 1959 Flying V&nbsp;in&nbsp;Antique Pelham Blue, mahogany wood, black pickguard, gold hardware, gold pickup covers, gold bridge, dot inlays, black knobs.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        Gibson “Wildwood” Spec 1959 Flying V - Antique Pelham Blue, Mahogany
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£6,295.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/gibson/06/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/gibson/06/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        Brand New Gibson '64 SG Standard TV Yellow, Maestro Vibrola, VOS
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;brand new Gibson Norman Harris Special Order &rsquo;64&nbsp;SG Standard in&nbsp;a&nbsp;TV&nbsp;Yellow finish with an&nbsp;aged Maestro Vibrola, black pickguard, black knobs, black pickup frames, nickel hardware, nickel pickup covers.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        Brand New Gibson '64 SG Standard TV Yellow, Maestro Vibrola, VOS
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£5,999.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/fender/01/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/fender/01/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        1974 Fender Telecaster Custom Natural
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;1974 Fender Telecaster Custom Natural with original hardware, original frets, original electronics, non-original 3-way bridge w/&nbsp;non-original saddles, original wide-range humbucker pickup and original Tele bridge pickup.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        1974 Fender Telecaster Custom Natural
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£4,995.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/fender/02/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/fender/02/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        2001 Fender Stratocaster Eric Clapton "Blackie" Signature, Black
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        2001 Fender Stratocaster Eric Clapton &rsquo;&rsquo;Blackie&rsquo;&rsquo; Signature Model in&nbsp;a&nbsp;black finish with chrome hardware, six saddle adjustable bridge, comes with Fender tweed hard-shell case with booklet and strap, electronics are all in&nbsp;working order.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        2001 Fender Stratocaster Eric Clapton "Blackie" Signature, Black
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£1,849.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/fender/03/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/fender/03/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        2019 Fender Custom Shop 1950 Double Esquire, Butterscotch Blonde NOS
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;2019 Fender Custom Shop Vintage Custom &rsquo;50 Double Esquire in&nbsp;a &rsquo;Butterscotch Blonde&rsquo; finish with a&nbsp;black pickguard, hardware is&nbsp;all original, NOS blackguard, original hard shell case with certificate of&nbsp;authenticity.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        2019 Fender Custom Shop 1950 Double Esquire, Butterscotch Blonde NOS
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£3,595.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/fender/04/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/fender/04/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        2020 Fender Custom Shop Wildwood 1961 Stratocaster NOS Spearmint Trans Satin
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;2020 Fender Custom Shop Wildwood Masterbuilt by&nbsp;Jason Smith 1961 Stratocaster NOS Spearmint Trans Satin with chrome tuners and strap buttons, chrome 6-saddle adjustable bridge.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        2020 Fender Custom Shop Wildwood 1961 Stratocaster NOS Spearmint Trans Satin
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£8,495.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/fender/05/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/fender/05/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        2016 Fender Stratocaster 3-Tone Sunburst Maple Fingerboard
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;2016 Fender Stratocaster 3-Tone Sunburst Maple Fingerboard with chrome tuners and strap buttons, chrome 6-saddle adjustable bridge.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        2016 Fender Stratocaster 3-Tone Sunburst Maple Fingerboard
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£1,695.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/fender/06/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/fender/06/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        Brand New Fender American Professional II Telecaster Sunburst 
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;brand new Fender AM&nbsp;Pro II&nbsp;Telecaster in&nbsp;a&nbsp;sunburst finish with a&nbsp;tortoise pickguard, chrome plates, chrome knobs, chrome bridge/tailpiece, chrome strap buttons, chrome input jack, chrome tuners.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        Brand New Fender American Professional II Telecaster Sunburst
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£1,699.99</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/fender/07/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/fender/07/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        2022 Fender Stratocaster American Pro II Maui Blue Maple Neck
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        The American Professional II&nbsp;Stratocaster draws from more than sixty years of&nbsp;innovation, inspiration and evolution to&nbsp;meet the demands of&nbsp;today&rsquo;s working player.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        2022 Fender Stratocaster American Pro II Maui Blue Maple Neck
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£1,699.99</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/martin/01/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/martin/01/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        1950 Martin D-28
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;1950 Martin D-28 with waffleback tuners, spruce top body with Brazilian rosewood sides and back, mahogany neck with ebony fingerboard, 1.686&Prime; nut width, 16&Prime; fingerboard radius.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        1950 Martin D-28
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£18,900.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/martin/02/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/martin/02/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        1966 Martin D-18
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;1966 Martin D-18 with original Grover tuners, original rosewood plate bridge (new bone saddle), original frets with some frets re-glued, spruce top body with mahogany sides and back, mahogany neck with rosewood fingerboard.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        1966 Martin D-18
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£7,295.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/martin/03/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/martin/03/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        2004 Martin D-12-28
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;a&nbsp;2004 Martin D-12-28 with original hardware, original ebony bridge, original frets, Martin Thinline Gold Plus Piezo pickup, spruce top body with Indian rosewood back.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        2004 Martin D-12-28
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£2,395.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/martin/04/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/martin/04/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        2008 Martin Custom C000-28 Cutaway 12-Fret Slot
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        2008 Martin Custom C000-28 Cutaway 12-Fret Slot with original Waverly tuners, original ebony pyramid bridge, original frets, Adirondack spruce top body with Indian rosewood sides and back, herringbone binding.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        2008 Martin Custom C000-28 Cutaway 12-Fret Slot
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£4,995.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/epiphone/01/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/epiphone/01/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        1951 Epiphone Emperor Blonde Cutaway
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        For sale is&nbsp;an&nbsp;Epiphone Emperor from 1951 in&nbsp;a&nbsp;blonde finish, single cutaway, tortoise pickguard, gold frequensator tailpiece, wooden staggered bridge, block inlays, gold tuners, two f&nbsp;holes.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        1951 Epiphone Emperor Blonde Cutaway
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£15,900.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/epiphone/02/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/epiphone/02/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        2022 Epiphone Hummingbird Aged Cherry Sunburst Gloss
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        The Hummingbird&trade; is&nbsp;one of&nbsp;the most instantly-recognizable and remarkable acoustic guitars ever built.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        2022 Epiphone Hummingbird Aged Cherry Sunburst Gloss
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£849.00</div>
+                  </div>
+                </article>
+                <article class="items-catalog__item">
+                  <div class="items-catalog__box">
+                    <a class="items-catalog__link" href="#">
+                      <picture>
+                        <source class="webp" srcset="img/content/epiphone/03/01.webp" type="image/webp">
+                        <img class="items-catalog__img" src="img/content/epiphone/03/01.jpg" alt="Image">
+                      </picture>
+                    </a>
+                    <button class="items-catalog__favourite _icon-favourite-item"></button>
+                    <button class="items-catalog__btn" type="submit">Add to cart</button>
+                  </div>
+                  <div class="items-catalog__block">
+                    <div class="items-catalog__info info-catalog">
+                      <h3 class="info-catalog__title">
+                        Epiphone Texan FT-79 Natural, Lightly Used 
+                      </h3>
+                      <div class="info-catalog__rating">
+                        <div class="rating rating_set" data-ajax="true">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input class="rating__item" type="radio" value="1" name="rating">
+                              <input class="rating__item" type="radio" value="2" name="rating">
+                              <input class="rating__item" type="radio" value="3" name="rating">
+                              <input class="rating__item" type="radio" value="4" name="rating">
+                              <input class="rating__item" type="radio" value="5" name="rating">
+                            </div>
+                          </div>
+                          <div class="rating__value">0</div>
+                        </div>
+                      </div>
+                      <p class="info-catalog__text">
+                        A&nbsp;lightly used Epiphone Texan FT-79 in&nbsp;a&nbsp;natural finish with a&nbsp;tortoise pickguard with Epiphone &rsquo;E&rsquo; emblem, hardware is&nbsp;all original, original Rosewood wooden bridge, frets are all original, Piezo bridge pickup installed inside.
+                      </p>
+                    </div>
+                    <a class="items-catalog__link" href="#">
+                      <h4 class="items-catalog__title">
+                        Epiphone Texan FT-79 Natural, Lightly Used
+                      </h4>
+                    </a>
+                    <div class="items-catalog__price">£2,499.00</div>
+                  </div>
+                </article>
+              </div>
+              <div class="main-catalog__btn">
+                <button class="show-more">Show more</button>
+              </div>
+            </main>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__container _container">
+      <div class="footer__inner">
+        <div class="footer__contacts contacts-footer">
+          <div class="contacts-footer__block">
+            <h3 class="contacts-footer__title _icon-location">
+              Find us
+            </h3>
+            <p class="contacts-footer__text">
+              26 Alexander Road London N67 5MP
+            </p>
+          </div>
+          <div class="contacts-footer__block">
+            <h3 class="contacts-footer__title _icon-phone">
+              Call us
+            </h3>
+            <a class="contacts-footer__phone" href="tel:+442045678902">
+              +44 20 4567-8902
+            </a>
+          </div>
+          <div class="contacts-footer__block">
+            <h3 class="contacts-footer__title _icon-email">
+              Write us
+            </h3>
+            <a class="contacts-footer__email" href="mailto:vintage_guitar@mail.co.uk">
+              vintage_guitar@mail.co.uk
+            </a>
+          </div>
+        </div>
+        <div class="footer__columns column-footer">
+          <div class="column-footer__block">
+            <ul class="column-footer__list">
+              <li class="column-footer__item">
+                <h4 class="column-footer__title">
+                  Categories
+                </h4>
+              </li>
+              <li class="column-footer__item">
+                <a class="column-footer__link" href="electric.html">Electric</a>
+              </li>
+              <li class="column-footer__item">
+                <a class="column-footer__link" href="acoustic.html">Acoustic</a>
+              </li>
+              <li class="column-footer__item">
+                <a class="column-footer__link" href="catalog.html">All categories</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column-footer__block">
+            <ul class="column-footer__list">
+              <li class="column-footer__item">
+                <h4 class="column-footer__title">
+                  Information
+                </h4>
+              </li>
+              <li class="column-footer__item">
+              </li>
+              <li class="column-footer__item">
+                <a class="column-footer__link" href="about.html">About us</a>
+              </li>
+              <li class="column-footer__item">
+                <a class="column-footer__link" href="feedback.html">Feedback</a>
+              </li>
+              <li class="column-footer__item">
+                <a class="column-footer__link" href="delivery.html">Delivery</a>
+              </li>
+              <li class="column-footer__item">
+                <a class="column-footer__link" href="contacts.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column-footer__block">
+            <ul class="column-footer__list">
+              <li class="column-footer__item">
+                <h4 class="column-footer__title">
+                  Social Connection
+                </h4>
+              </li>
+              <div class="column-footer__social">
+                <li class="column-footer__item">
+                  <a class="column-footer__link _icon-instagram" target="_blank" href="#"></a>
+                </li>
+                <li class="column-footer__item">
+                  <a class="column-footer__link _icon-twitter" target="_blank" href="#"></a>
+                </li>
+                <li class="column-footer__item">
+                  <a class="column-footer__link _icon-telegram" target="_blank" href="#"></a>
+                </li>
+                <li class="column-footer__item">
+                  <a class="column-footer__link _icon-pinterest" target="_blank" href="#"></a>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="column-footer__block">
+            <h4 class="column-footer__title">
+              Subscribe
+            </h4>
+            <form class="footer-form" name="feedback" method="POST" action="#">
+              <div class="footer-form__box">
+                <div class="footer-form__control">
+                  <input class="footer-form__input" type="email" autocomplete="off" name="usermail" maxlength="50" value="" placeholder="Enter your email">
+                </div>
+                <span class="error"></span>
+              </div>
+              <button class="footer-form__button" id="send_mess" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__container _container">
+        <div class="footer-bottom__inner">
+          <div class="footer-copyright">
+            <p class="footer-copyright__text">
+              Copyright &copy; 2023 All Rights Reserved by 
+              <a class="footer-copyright__link" href="#">mr.shafranski</a>
+            </p>
+          </div>
+          <div class="footer-payment">
+            <img class="footer-payment__icon" src="img/icons/mastercard.svg" alt="Icon">
+            <img class="footer-payment__icon" src="img/icons/visa.svg" alt="Icon">
+            <img class="footer-payment__icon" src="img/icons/paypal.svg" alt="Icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <section class="page__modal">
+  <div class="_modal" data-modal="modal-1" aria-hidden="true">
+    <div class="modal-bg">
+      <div class="modal-body">
+        <div class="modal-close _icon-close"></div>
+        <div class="modal-content">
+          <div class="filter-catalog__categories">
+            <h3 class="filter-catalog__title">Categories</h3>
+            <ul class="filter-catalog__categories-list">
+              <li class="filter-catalog__categories-item">
+                <input class="filter-catalog__categories-input" type="checkbox" id="electric" value="filter-electric">
+                <label class="filter-catalog__categories-label" for="electric">Electric</label>
+              </li>
+              <li class="filter-catalog__categories-item">
+                <input class="filter-catalog__categories-input" type="checkbox" id="acoustic" value="filter-acoustic">
+                <label class="filter-catalog__categories-label" for="acoustic">Acoustic</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-catalog__brands">
+            <h3 class="filter-catalog__title">Brands</h3>
+            <ul class="filter-catalog__brands-list">
+              <li class="filter-catalog__brands-item">
+                <input class="filter-catalog__brands-input" type="checkbox" id="epiphone" value="filter-epiphone">
+                <label class="filter-catalog__brands-label" for="epiphone">Epiphone</label>
+              </li>
+              <li class="filter-catalog__brands-item">
+                <input class="filter-catalog__brands-input" type="checkbox" id="fender" value="filter-fender">
+                <label class="filter-catalog__brands-label" for="fender">Fender</label>
+              </li>
+              <li class="filter-catalog__brands-item">
+                <input class="filter-catalog__brands-input" type="checkbox" id="gibson" value="filter-gibson">
+                <label class="filter-catalog__brands-label" for="gibson">Gibson</label>
+              </li>
+              <li class="filter-catalog__brands-item">
+                <input class="filter-catalog__brands-input" type="checkbox" id="martin" value="filter-martin">
+                <label class="filter-catalog__brands-label" for="martin">Martin</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-catalog__price price">
+            <h3 class="filter-catalog__title">Price</h3>  
+            <div class="price__value">
+              <div class="price__field">
+                <span>$</span>
+                <input class="price__field-min" type="number" value="800">
+              </div>
+              <div class="price__separator">-</div>
+              <div class="price__field">
+                <span>$</span>
+                <input class="price__field-max" type="number" value="18900">
+              </div>
+            </div>
+            <div class="price__slider">
+              <div class="price__progress"></div>
+            </div>
+            <div class="price__range">
+              <input class="price__range-min" type="range" min="0" max="20000" value="800" step="100">
+              <input class="price__range-max" type="range" min="0" max="20000" value="18900" step="100">
+            </div>
+          </div>
+          <div class="filter-catalog__action">
+            <button class="filter-catalog__clear" type="reset">Clear</button>
+            <button class="filter-catalog__apply" type="submit">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="_modal" data-modal="modal-2" aria-hidden="true">
+    <div class="modal-bg">
+      <div class="modal-body">
+        <div class="modal-close _icon-close" id="close-button"></div>
+        <div class="modal-content">
+          <div class="modal-overlay modal-overlay__close" id="modal-overlay"></div>
+          <div class="modal-reviews modal-reviews__close">
+            <div class="modal-reviews__body">
+              <div class="modal-reviews__top">
+                <div class="modal-reviews__text">Write a review</div>
+              </div>
+              <div class="modal-reviews__block">
+                <div class="modal-reviews__content">
+                  <img class="modal-reviews__img" src="" alt="Изображение">
+                  <div class="modal-reviews__descr"></div>
+                  <div class="modal-reviews__rating">
+                    <div class="modal-reviews__grade">Your mark</div>
+                    <div class="rating rating_set" data-ajax="true">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input class="rating__item" type="radio" value="1" name="rating">
+                          <input class="rating__item" type="radio" value="2" name="rating">
+                          <input class="rating__item" type="radio" value="3" name="rating">
+                          <input class="rating__item" type="radio" value="4" name="rating">
+                          <input class="rating__item" type="radio" value="5" name="rating">
+                        </div>
+                      </div>
+                      <div class="rating__value">0</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-reviews__form">
+                  <form class="form-reviews" method="POST" action="#">
+                    <input class="form-reviews__input" type="text" autocomplete="off" maxlength="30" value="" placeholder="Enter your name">
+                    <textarea class="form-reviews__textarea" placeholder="Your review" cols="30" rows="8"></textarea>
+                    <button class="form-reviews__btn" type="submit">Leave review</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+  <script src="js/swiper.min.js"></script>
+  <script defer src="js/script.min.js"></script>
+</body>
+</html>
